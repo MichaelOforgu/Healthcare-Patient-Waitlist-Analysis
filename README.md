@@ -19,8 +19,9 @@ The healthcare landscape has dramatically shifted over the past decade, bringing
 - Track current status of patient waiting list across all departments and specialties
 - Analyze historical monthly trend of waiting list in Inpatient & Outpatient categories
 - Detailed specialty level & age profile analysis of patient waitlist distribution
+<br/>
 
-### About The Dataset
+## About The Dataset
 The dataset consists of multiple CSV files tracking patient waitlists from 2018 to 2021, separated into Inpatient (IN_WL) and Outpatient (OP_WL) categories. Each file captures detailed waiting list information across different specialties, age groups, and time periods. Additionally, a Mapping_Specialty.csv file provides specialty classification details. All files are in CSV (Comma Separated Values) format.
 
 Each row represents a single waitlist record with standardized columns across both inpatient and outpatient datasets. The data structure is consistent throughout all years (2018-2021).
@@ -75,7 +76,7 @@ Validated and set appropriate data types for each column (**"Archive_Date"** as 
 4. Trimmed all text columns to remove any leading or trailing spaces.
 5. Performed data quality checks to ensure consistency across all years of data.
 
-## Data Modelling
+### Data Modelling
 The data model created consists of three key tables connected through appropriate relationships:
 
 1. All_Data: Main fact table containing the waitlist records with metrics like Total patients and various attributes like Adult_Child, Age_Profile, Time_Bands, Case_Type, and Archive_Date.
@@ -96,11 +97,17 @@ The data model created consists of three key tables connected through appropriat
 ![](images/data_model.png)
 
 This star schema design allows for efficient analysis and reporting of waitlist trends across different specialties and time periods.
+<br/>
+<br/>
 
 ## Visualization in Power BI:
+
 ![](images/dashboard_screenshot.png)
 
-### Project Analysis:
+<br/>
+
+## Project Analysis:
+
 ![](images/waitlist_KPI.png)
 
 - The total Month-to-Date (MTD) waitlist reached 709K patients, with the most recent month showing 640K patients waiting for treatment.
@@ -144,11 +151,14 @@ Displays a fluctuating pattern with an overall declining trend from July 2018 (5
 - **Inpatient Cases**
 Shows the most stable trend among all categories, fluctuating between 19.9K and 24.7K. There was a noticeable peak in July 2020 (24.7K), aligning with the spikes seen in other categories, before returning to more typical levels around 22.3K by January 2021.
 The synchronized peaks across all categories in July 2020 suggest a system-wide impact, likely related to healthcare service disruptions during the pandemic period.
+<br/>
 
 ## Visuals in Power BI Live Report:
 You can view and interact with this dashboard on Healthcare Patient Waitlist analysis [here](https://app.powerbi.com/view?r=eyJrIjoiMDA2Y2EzNWEtNDJlYS00MDk3LTg4ODUtMjk2OWVjNWM3YjgwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9).
+<br/>
+<br/>
 
-### Recommendations
+## Recommendations
 
 1. **Outpatient Capacity Enhancement** - Given the consistent upward trend in outpatient waitlists (reaching 628.8K), prioritize increasing outpatient clinic capacity through extended hours and additional clinics. Consider implementing virtual consultations where appropriate to manage the growing demand.
 
