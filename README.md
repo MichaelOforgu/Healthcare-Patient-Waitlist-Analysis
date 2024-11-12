@@ -102,7 +102,7 @@ This star schema design allows for efficient analysis and reporting of waitlist 
 
 ## Visualization in Power BI:
 
-![](images/dashboard_screenshot.png)
+![](images/dashboard_screenshot1.png)
 
 <br/>
 
